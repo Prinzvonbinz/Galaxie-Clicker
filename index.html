@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galaxy Collector</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="main-menu">
+    <h1>🌌 Galaxy Collector</h1>
+    <button id="start-game">Spiel starten</button>
+    <button id="reset-game">Spielstand zurücksetzen</button>
+</div>
+
+<div id="game" class="hidden">
+    <div class="stats">
+        <div>Ressourcen: <span id="resources">0</span></div>
+        <div>Pro Sekunde: <span id="rps">0</span></div>
+        <div>Level: <span id="level">1</span></div>
+        <div>Prestige-Bonus: <span id="prestigeBonus">0</span>x</div>
+    </div>
+
+    <div class="collector-container">
+        <img id="collector" src="https://img.freepik.com/freie-psd/astronaut-icon-isoliert_47987-12112.jpg" alt="Collector">
+        <button id="collect-btn">🚀 Sammeln</button>
+    </div>
+
+    <div class="upgrades">
+        <h2>Upgrades</h2>
+        <div id="upgrade-list"></div>
+    </div>
+
+    <div class="prestige">
+        <h2>Prestige</h2>
+        <button id="prestige-btn">Zurücksetzen für Bonus</button>
+    </div>
+
+    <button id="back-menu">Zurück zum Hauptmenü</button>
+</div>
+
+<audio id="click-sound" src="https://freesound.org/data/previews/341/341695_62461-lq.mp3"></audio>
+<audio id="upgrade-sound" src="https://freesound.org/data/previews/170/170632_2437350-lq.mp3"></audio>
+<audio id="prestige-sound" src="https://freesound.org/data/previews/325/325068_4939433-lq.mp3"></audio>
+
+<script src="main.js"></script>
+</body>
+</html>
